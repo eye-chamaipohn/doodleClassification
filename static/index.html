@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sketcher</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bs4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+
+    <!-- css pie -->
+    <link rel="stylesheet" href="pie.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- TensorFlow.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest">
+    </script>
+
+    <!-- canvas script -->
+    <script src="fabric.js"></script>
+
+    <!-- main script -->
+    <script src="main.js">
+    </script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class="header">Doodle Classification</div>
+    <img src="img_header.png" style="width: 100%; padding-top: 1%; padding-bottom: 1%;">
+    <div class="container-fluid" style="padding-top: 2%; padding-bottom: 2%;">
+        <p class="text-center" style="color: black; font-weight: bold;">You can draw the following classes</p>
+        <p class="text-center" style="color: black; font-weight: bold;">The neural network will guess what you're drawing</p>
+    </div>
+
+    <div class="row container-fluid">
+        <div class="col-md-auto" style="margin: auto;">
+            <h4 hidden id="status">Loading Model... </h4>
+            <div class="row" style="margin: auto;">
+                <div class="cloumn">
+                    <canvas id="canvas" width="300" height="300" class="canvas" style="border:2px solid #b9bfc9;"></canvas>
+                </div>
+                <div class="cloumn">
+                    <div class="col-md-auto">
+                        <p style="margin-top: 10%; margin-left: 50px; color: #22A2D2; font-weight: bold;">Result</p>
+                        <section style="padding-top: 0px;">
+                            <!--<div class="pieID pie">
+            
+                            </div>-->
+                            <ul class="pieID legend">
+                                <li>
+                                    <em id="sym1"></em>
+                                    <span id="prob1"></span>
+                                </li>
+                                <li>
+                                    <em id="sym2"></em>
+                                    <span id="prob2"></span>
+                                </li>
+                                <li>
+                                    <em id="sym3"></em>
+                                    <span id="prob3"></span>
+                                </li>
+                                <li>
+                                    <em id="sym4"></em>
+                                    <span id="prob4"></span>
+                                </li>
+                                <li>
+                                    <em id="sym5"></em>
+                                    <span id="prob5"></span>
+                                </li>
+                            </ul>
+                        </section>
+                        <button type="button" id="custom-button" onclick='erase()' style='margin-left: 10px; margin-top: 20px;' disabled>CLEAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group" style='margin-top:40px;'>
+                <input hidden type="range" min="5" max="20" value="10" class="slider" id="myRange" style='margin-top:20px;'>
+            </div>
+        </div>
+
+    </div>
+    
+<script src="pie.js"></script>
+<script>
+    console.log('starting');
+    start('en')
+</script>
+
+</html>

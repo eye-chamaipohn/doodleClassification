@@ -1,0 +1,10 @@
+apple
+car
+cat
+cup
+donut
+eyeglasses
+shorts
+sock
+star
+umbrella

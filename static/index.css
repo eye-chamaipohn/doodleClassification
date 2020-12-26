@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Ekkamai";
+    src: url("EkkamaiNew-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OnesilverSignature";
+    src: url("OnesilverSignature.ttf");
+}
+
+
+/* body {
+    background-color: white;
+} */
+
+.header {
+    /*margin-bottom: 20px;*/
+    padding: 20px;
+    height: 140px;
+    background-color: black;
+    text-align: center;
+    font-family: OnesilverSignature;
+    font-size: 70px;
+    color: white;
+}
+
+#status {
+    margin-top: 30px;
+    color: burlywood;
+    font-family: Ekkamai;
+}
+
+#custom-button {
+    /*background-color: tomato;
+    padding: 5px 60px;
+    border-radius: 12px;
+    color: black;*/
+    background-color: #FFC300 ;
+    /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonload {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.fa {
+    margin-left: -12px;
+    margin-right: 8 px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clear floats after image containers */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.h2 {
+    font-family: Ekkamai;
+}
+
+.grid-container {
+    margin-left: 630px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*grid-gap: 10px;*/
+    background-color: white;
+}
+
+.grid-container>div {
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+p {
+    font-family: Ekkamai;
+    font-size: 30px
+}
